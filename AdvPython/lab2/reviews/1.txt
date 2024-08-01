@@ -1,0 +1,5 @@
+Customer ID: A1B2C3
+Product ID: P1Q2R3S4T5
+Review Date: 2023-07-15
+Review Rating: 4
+Review Text: Great product, highly recommend!

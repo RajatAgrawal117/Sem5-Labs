@@ -1,0 +1,5 @@
+Customer ID: G7H8I9
+Product ID: P1Q2R3S4T5
+Review Date: 2023-04-12
+Review Rating: 
+Review Text: Excellent quality, very satisfied!

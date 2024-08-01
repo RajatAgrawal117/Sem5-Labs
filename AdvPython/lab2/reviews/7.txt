@@ -1,0 +1,5 @@
+Customer ID: S1T2U3
+Product ID: P3Q4R5S6T7
+Review Date: 2023-02-15
+Review Rating: A
+Review Text: Amazing product, exceeded expectations!

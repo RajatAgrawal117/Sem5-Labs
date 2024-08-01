@@ -1,0 +1,5 @@
+Customer ID: V4W5X6
+Product ID: P3Q4R5S6T7
+Review Date: 2023-07-05
+Review Rating: 3
+Review Text: Average, nothing special.

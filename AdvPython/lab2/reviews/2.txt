@@ -1,0 +1,5 @@
+Customer ID: D4E5F6
+Product ID: P6Q7R8S9T0
+Review Date: 2023-05-22
+Review Rating: x
+Review Text: It's okay, could be better.

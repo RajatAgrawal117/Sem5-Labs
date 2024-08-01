@@ -1,0 +1,5 @@
+Customer ID: B1C2D3
+Product ID: P2Q3R4S5T6
+Review Date: 2023-06-20
+Review Rating: 4
+Review Text: Satisfactory, meets expectations.
