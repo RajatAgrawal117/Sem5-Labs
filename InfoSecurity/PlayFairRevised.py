@@ -1,11 +1,9 @@
 def toLowerCase(text):
     return text.lower()
 
-# Function to remove all spaces in a string
 def removeExtraSpace(text):
     return text.replace(" ", "")
 
-# Function to group 2 elements of a string as a list element
 def diagraph(text):
     diagraph = []
     group = 0
@@ -15,7 +13,6 @@ def diagraph(text):
     diagraph.append(text[group:])
     return diagraph
 
-# Function to fill a letter in a string element if 2 letters in the same string match
 def fillerLetter(text):
     k = len(text)
     new_word = ""
@@ -62,41 +59,29 @@ def search(mat, letter):
     for i in range(5):
         for j in range(5):
             if mat[i][j] == letter:
-                return i, j
+                return i * 5 + j  # Return index in flattened matrix
+    return -1  # In case the letter is not found
 
-def encrypt_RowRule(matr, e1r, e1c, e2r, e2c):
-    char1 = matr[e1r][0] if e1c == 4 else matr[e1r][e1c + 1]
-    char2 = matr[e2r][0] if e2c == 4 else matr[e2r][e2c + 1]
-    return char1, char2
+def calculateDifferences(matrix):
+    differences = {}
+    for i in range(5):
+        for j in range(5):
+            letter = matrix[i][j]
+            original_index = list1.index(letter)
+            current_index = i * 5 + j
+            difference = original_index - current_index
+            differences[letter] = difference
+    return differences
 
-def encryptColumnRule(matr, e1r, e1c, e2r, e2c):
-    char1 = matr[0][e1c] if e1r == 4 else matr[e1r + 1][e1c]
-    char2 = matr[0][e2c] if e2r == 4 else matr[e2r + 1][e2c]
-    return char1, char2
-
-def encrypt_RectangleRule(matr, e1r, e1c, e2r, e2c):
-    char1 = matr[e1r][e2c]
-    char2 = matr[e2r][e1c]
-    return char1, char2
-
-def encryptByPlayfairCipher(Matrix, plainList):
-    CipherText = []
-    for pair in plainList:
-        ele1_x, ele1_y = search(Matrix, pair[0])
-        ele2_x, ele2_y = search(Matrix, pair[1])
-
-        if ele1_x is None or ele2_x is None:
-            raise ValueError(f"Character '{pair[0]}' or '{pair[1]}' not found in matrix")
-
-        if ele1_x == ele2_x:
-            c1, c2 = encrypt_RowRule(Matrix, ele1_x, ele1_y, ele2_x, ele2_y)
-        elif ele1_y == ele2_y:
-            c1, c2 = encryptColumnRule(Matrix, ele1_x, ele1_y, ele2_x, ele2_y)
-        else:
-            c1, c2 = encrypt_RectangleRule(Matrix, ele1_x, ele1_y, ele2_x, ele2_y)
-
-        CipherText.append(c1 + c2)
-    return CipherText
+def encryptByCustomRule(differences, text):
+    encrypted_text = ""
+    for char in text:
+        if char in differences:
+            diff = differences[char]
+            original_index = list1.index(char)
+            new_index = (original_index - diff) % 25  # Ensure the index wraps around correctly
+            encrypted_text += list1[new_index]
+    return encrypted_text
 
 # User input
 text_Plain = input("Enter the plain text: ").replace('j', 'i')
@@ -111,8 +96,9 @@ if len(PlainTextList[-1]) != 2:
 key = toLowerCase(key)
 Matrix = generateKeyTable(key, list1)
 
-# Encrypt plain text
-CipherList = encryptByPlayfairCipher(Matrix, PlainTextList)
+# Calculate differences based on the custom rule
+differences = calculateDifferences(Matrix)
 
-CipherText = "".join(CipherList)
+# Encrypt plain text using the custom rule
+CipherText = encryptByCustomRule(differences, ''.join(PlainTextList))
 print("CipherText:", CipherText)
