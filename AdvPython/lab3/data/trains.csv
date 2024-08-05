@@ -1,0 +1,11 @@
+Train ID,Train Name,Source Station,Destination Station,Total Seats,Available Seats,Total Fare
+T1,Shatabdi Express,Delhi,Mumbai,100,50,1000
+T2,Rajdhani Express,Delhi,Kolkata,200,100,2000
+T3,Duronto Express,Delhi,Chennai,150,75,1500
+T4,Gatimaan Express,Delhi,Agra,75,25,750
+T5,Tejas Express,Delhi,Lucknow,125,60,1250
+T6,Humsafar Express,Delhi,Jaipur,150,75,1500
+T7,Garib Rath Express,Delhi,Patna,100,50,1000
+T8,Sampark Kranti Express,Delhi,Chandigarh,75,25,750
+T9,Jan Shatabdi Express,Delhi,Amritsar,100,50,1000
+T10,Double Decker Express,Delhi,Kanpur,150,75,1500

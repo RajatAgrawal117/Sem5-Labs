@@ -1,5 +1,5 @@
 Customer ID: P7Q8R9
 Product ID: P1Q2R3S4T5
 Review Date: 2023-01-25
-Review Rating: x
+Review Rating: 2
 Review Text: Good value for the price.

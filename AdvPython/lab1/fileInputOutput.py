@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 x = []
 y = []
 
-with open('./lab1/example.csv', 'r') as xyz:
+with open('example.csv', 'r') as xyz:
     reader = csv.reader(xyz)
     next(reader)  
     for row in reader:
