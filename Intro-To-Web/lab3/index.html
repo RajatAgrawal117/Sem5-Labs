@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: justify;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .div:hover {
+            background-color: #ccc;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <hr>
+    <h2>I'm Ready to Learn HTML</h2>
+    <p>This is my first web page.</p>
+
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how:</p>
+    <ol>
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my schedule.</li>
+        <li>...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</li>
+    </ol>
+
+    <hr>
+    <h2>I Am Also Planning a Vacation</h2>
+    <p>I've been working hard and <em>really need a getaway</em>.</p>
+    <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+
+    <h3>Places I'd Like to Visit</h3>
+    <ul>
+        <li>I've heard good things about the Caribbean.</li>
+        <li>
+            I've heard good things about going here:
+            <address>
+                Margaritaville Island Reserve Riviera Cancún<br>
+                Bahia Petempich Puerto Morelos, Mexico<br>
+                Colonia Morelos, México 77580
+            </address>
+        </li>
+    </ul>
+
+    <!-- TODO: Add more places -->
+    <div class="container">
+        <h3>Places I Want to Avoid</h3>
+        <br>    
+        <br/>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+            <img src="north.jpeg" alt="">
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+            <img src="south.jpeg" alt="">
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+            <img src="mountain.jpeg" alt="">
+        </dl>
+    </div>
+
+    <hr>
+    &lt;&lt;&lt; &copy;Rajat Agrawal &gt;&gt;&gt;
+</body>
+
+</html>
