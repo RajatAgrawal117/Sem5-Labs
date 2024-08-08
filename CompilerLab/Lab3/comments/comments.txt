@@ -1,0 +1,14 @@
+Single-line Comment 1: // this is a single line comment
+Single-line Comment 2: // this is second single line comment
+Single-line Comment 3: // this is third single line comment
+Multiline Comment 1: /*
+this 
+is a
+multiline
+comment
+*/
+Multiline Comment 2: /*
+this is
+second multiline
+comment
+*/
