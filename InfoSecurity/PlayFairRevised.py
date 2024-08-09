@@ -1,8 +1,10 @@
 def toLowerCase(text):
     return text.lower()
 
+
 def removeExtraSpace(text):
     return text.replace(" ", "")
+
 
 def diagraph(text):
     diagraph = []
@@ -12,6 +14,7 @@ def diagraph(text):
         group = i
     diagraph.append(text[group:])
     return diagraph
+
 
 def fillerLetter(text):
     k = len(text)
@@ -34,8 +37,10 @@ def fillerLetter(text):
             new_word = text
     return new_word
 
+
 list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm',
          'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
 
 def generateKeyTable(word, list1):
     key_letters = []
@@ -55,12 +60,14 @@ def generateKeyTable(word, list1):
 
     return matrix
 
+
 def search(mat, letter):
     for i in range(5):
         for j in range(5):
             if mat[i][j] == letter:
                 return i * 5 + j  # Return index in flattened matrix
     return -1  # In case the letter is not found
+
 
 def calculateDifferences(matrix):
     differences = {}
@@ -73,18 +80,22 @@ def calculateDifferences(matrix):
             differences[letter] = difference
     return differences
 
+
 def encryptByCustomRule(differences, text):
     encrypted_text = ""
     for char in text:
         if char in differences:
             diff = differences[char]
             original_index = list1.index(char)
-            new_index = (original_index - diff) % 25  # Ensure the index wraps around correctly
+            # Ensure the index wraps around correctly
+            new_index = (original_index - diff) % 25
             encrypted_text += list1[new_index]
     return encrypted_text
 
+
 # User input
-text_Plain = input("Enter the plain text: ").replace('j', 'i')
+plainText = input("Enter the plain text: ")
+text_Plain = plainText.replace('j', 'i')
 key = input("Enter the key text: ")
 
 # Process plain text and key
