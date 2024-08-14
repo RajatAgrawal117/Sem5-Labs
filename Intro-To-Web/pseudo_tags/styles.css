@@ -1,0 +1,47 @@
+p::first-line {
+    color: #0000ff; 
+    font-variant: small-caps; 
+}
+
+p::first-letter {
+    color: #ff0000; 
+    font-size: xx-large; 
+}
+p::second-letter {
+    color: #00ff00; 
+    font-size: xx-large; 
+}
+p.intro::first-letter {
+    color: #ff0000; 
+    font-size: 200%; 
+}
+
+h1::before {
+    display: inline-block;
+    width: 24px; 
+    height: 24px; 
+}
+
+h1::after {
+    display: inline-block;
+    width: 24px; 
+    height: 24px; 
+}
+
+li::marker {
+    color: red; 
+    font-size: 23px; 
+}
+
+::selection {
+    color: red; 
+    background: yellow;
+}
+h1:hover::before {
+    text-decoration: underline;
+
+}
+h1:hover::after {
+    text-transform: capitalize;
+    text-size-adjust: 50%;
+}
