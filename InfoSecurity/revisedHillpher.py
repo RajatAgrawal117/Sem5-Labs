@@ -28,8 +28,7 @@ def matrix_mod_inverse(matrix, mod):
         raise ValueError("Matrix is not invertible in mod 26.")
 
     # Modular inverse matrix
-    matrix_inv = det_inv * \
-        np.round(det * np.linalg.inv(matrix)).astype(int) % mod
+    matrix_inv = det_inv * np.round(det * np.linalg.inv(matrix)).astype(int) % mod
     return matrix_inv % mod
 
 def encrypt(message, key, n):
