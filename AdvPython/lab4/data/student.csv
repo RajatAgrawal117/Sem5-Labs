@@ -1,5 +1,5 @@
 student_name,subject1,subject2,subject3,subject4,subject5
-John Doe,85,78,92,88,76
+John Doe,-85,78,-92,88,76
 Jane Smith,90,82,87,93,85
 Alice Johnson,77,79,85,80,90
 Bob Brown,65,70,72,68,74

@@ -1,1 +1,0 @@
-Available Seats

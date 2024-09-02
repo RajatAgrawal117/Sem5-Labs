@@ -30,7 +30,7 @@ def calculate_average_marks(input_file, output_file):
         writer.writerows(student_averages)
 
 # Define input and output file names
-input_csv = 'data/student.csv'
+input_csv = "data/student.csv"
 output_csv = 'average.csv'
 
 # Calculate average marks and write to the output CSV file
