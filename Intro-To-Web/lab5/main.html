@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset{
+            background-color: rgb(255, 188, 254);
+            color: rgb(226, 73, 43);
+            border: 10px solid rgb(255, 107, 107);
+        }
+    </style>
+</head>
+<body>
+    <form action="welcome.php" method="post">
+        <fieldset>
+            <legend>using php</legend>
+        <div>
+            <label for="Name">Name: </label>
+            <input type="text" name="myName" id="Name">
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email: </label>
+            <input type="email" name="myEmail" id="Email">
+        </div>
+        <input type="submit" value="submit now">
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
