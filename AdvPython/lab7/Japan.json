@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Japan",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 12500,
+            "new": 400
+        },
+        "deaths": {
+            "total": 300,
+            "new": 30
+        },
+        "recovered": {
+            "total": 9500,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 12100,
+            "new": 400
+        },
+        "deaths": {
+            "total": 270,
+            "new": 30
+        },
+        "recovered": {
+            "total": 9150,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 11700,
+            "new": 400
+        },
+        "deaths": {
+            "total": 240,
+            "new": 30
+        },
+        "recovered": {
+            "total": 8800,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 11300,
+            "new": 400
+        },
+        "deaths": {
+            "total": 210,
+            "new": 30
+        },
+        "recovered": {
+            "total": 8450,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 10900,
+            "new": 400
+        },
+        "deaths": {
+            "total": 180,
+            "new": 30
+        },
+        "recovered": {
+            "total": 8100,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 10500,
+            "new": 400
+        },
+        "deaths": {
+            "total": 150,
+            "new": 30
+        },
+        "recovered": {
+            "total": 7750,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 10100,
+            "new": 400
+        },
+        "deaths": {
+            "total": 120,
+            "new": 30
+        },
+        "recovered": {
+            "total": 7400,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 9700,
+            "new": 400
+        },
+        "deaths": {
+            "total": 90,
+            "new": 30
+        },
+        "recovered": {
+            "total": 7050,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 9300,
+            "new": 400
+        },
+        "deaths": {
+            "total": 60,
+            "new": 30
+        },
+        "recovered": {
+            "total": 6700,
+            "new": 350
+        }
+    },
+    {
+        "country": "Japan",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 8900,
+            "new": 400
+        },
+        "deaths": {
+            "total": 30,
+            "new": 30
+        },
+        "recovered": {
+            "total": 6350,
+            "new": 350
+        }
+    }
+]

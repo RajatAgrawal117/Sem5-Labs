@@ -1,0 +1,68 @@
+Data for USA:
+
+Date: 2024-08-01
+Confirmed Cases: 13500 (New: 600)
+Deaths: 250 (New: 20)
+Recovered: 10800 (New: 500)
+----------------------------------------
+Date: 2024-07-01
+Confirmed Cases: 12900 (New: 600)
+Deaths: 230 (New: 20)
+Recovered: 10300 (New: 500)
+----------------------------------------
+Date: 2024-06-01
+Confirmed Cases: 12300 (New: 600)
+Deaths: 210 (New: 20)
+Recovered: 9800 (New: 500)
+----------------------------------------
+Date: 2024-05-01
+Confirmed Cases: 11700 (New: 600)
+Deaths: 190 (New: 20)
+Recovered: 9300 (New: 500)
+----------------------------------------
+Date: 2024-04-01
+Confirmed Cases: 11100 (New: 600)
+Deaths: 170 (New: 20)
+Recovered: 8800 (New: 500)
+----------------------------------------
+Date: 2024-03-01
+Confirmed Cases: 10500 (New: 600)
+Deaths: 150 (New: 20)
+Recovered: 8300 (New: 500)
+----------------------------------------
+Date: 2024-02-01
+Confirmed Cases: 9900 (New: 600)
+Deaths: 130 (New: 20)
+Recovered: 7800 (New: 500)
+----------------------------------------
+Date: 2024-01-01
+Confirmed Cases: 9300 (New: 600)
+Deaths: 110 (New: 20)
+Recovered: 7300 (New: 500)
+----------------------------------------
+Date: 2023-12-01
+Confirmed Cases: 8700 (New: 600)
+Deaths: 90 (New: 20)
+Recovered: 6800 (New: 500)
+----------------------------------------
+Date: 2023-11-01
+Confirmed Cases: 8100 (New: 600)
+Deaths: 70 (New: 20)
+Recovered: 6300 (New: 500)
+----------------------------------------
+
+Data for USA written to output.txt.
+
+Top 5 countries with the highest number of cases:
+England: 23800 cases
+Germany: 18100 cases
+Italy: 16700 cases
+Europe: 15800 cases
+Ukraine: 15000 cases
+
+Top 5 countries with the lowest number of cases:
+Europe: 15800 cases
+Ukraine: 15000 cases
+Russia: 14000 cases
+USA: 13500 cases
+Japan: 12500 cases

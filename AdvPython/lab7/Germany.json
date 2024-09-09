@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Germany",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 10000,
+            "new": 500
+        },
+        "deaths": {
+            "total": 200,
+            "new": 50
+        },
+        "recovered": {
+            "total": 8000,
+            "new": 450
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 10500,
+            "new": 600
+        },
+        "deaths": {
+            "total": 250,
+            "new": 60
+        },
+        "recovered": {
+            "total": 8450,
+            "new": 500
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 11100,
+            "new": 700
+        },
+        "deaths": {
+            "total": 310,
+            "new": 70
+        },
+        "recovered": {
+            "total": 8950,
+            "new": 550
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 11800,
+            "new": 800
+        },
+        "deaths": {
+            "total": 380,
+            "new": 80
+        },
+        "recovered": {
+            "total": 9500,
+            "new": 600
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 12600,
+            "new": 900
+        },
+        "deaths": {
+            "total": 460,
+            "new": 90
+        },
+        "recovered": {
+            "total": 10100,
+            "new": 650
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 13500,
+            "new": 1000
+        },
+        "deaths": {
+            "total": 550,
+            "new": 100
+        },
+        "recovered": {
+            "total": 10750,
+            "new": 700
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 14500,
+            "new": 1100
+        },
+        "deaths": {
+            "total": 650,
+            "new": 110
+        },
+        "recovered": {
+            "total": 11450,
+            "new": 750
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 15600,
+            "new": 1200
+        },
+        "deaths": {
+            "total": 760,
+            "new": 120
+        },
+        "recovered": {
+            "total": 12200,
+            "new": 800
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 16800,
+            "new": 1300
+        },
+        "deaths": {
+            "total": 880,
+            "new": 130
+        },
+        "recovered": {
+            "total": 13000,
+            "new": 850
+        }
+    },
+    {
+        "country": "Germany",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 18100,
+            "new": 1400
+        },
+        "deaths": {
+            "total": 1010,
+            "new": 140
+        },
+        "recovered": {
+            "total": 13850,
+            "new": 900
+        }
+    }
+]

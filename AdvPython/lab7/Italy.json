@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Italy",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 9500,
+            "new": 450
+        },
+        "deaths": {
+            "total": 180,
+            "new": 40
+        },
+        "recovered": {
+            "total": 7500,
+            "new": 400
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 9900,
+            "new": 500
+        },
+        "deaths": {
+            "total": 220,
+            "new": 50
+        },
+        "recovered": {
+            "total": 7950,
+            "new": 450
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 10400,
+            "new": 550
+        },
+        "deaths": {
+            "total": 270,
+            "new": 60
+        },
+        "recovered": {
+            "total": 8450,
+            "new": 500
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 11000,
+            "new": 600
+        },
+        "deaths": {
+            "total": 330,
+            "new": 70
+        },
+        "recovered": {
+            "total": 9000,
+            "new": 550
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 11700,
+            "new": 650
+        },
+        "deaths": {
+            "total": 400,
+            "new": 80
+        },
+        "recovered": {
+            "total": 9600,
+            "new": 600
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 12500,
+            "new": 700
+        },
+        "deaths": {
+            "total": 480,
+            "new": 90
+        },
+        "recovered": {
+            "total": 10250,
+            "new": 650
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 13400,
+            "new": 750
+        },
+        "deaths": {
+            "total": 570,
+            "new": 100
+        },
+        "recovered": {
+            "total": 10950,
+            "new": 700
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 14400,
+            "new": 800
+        },
+        "deaths": {
+            "total": 670,
+            "new": 110
+        },
+        "recovered": {
+            "total": 11700,
+            "new": 750
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 15500,
+            "new": 850
+        },
+        "deaths": {
+            "total": 780,
+            "new": 120
+        },
+        "recovered": {
+            "total": 12500,
+            "new": 800
+        }
+    },
+    {
+        "country": "Italy",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 16700,
+            "new": 900
+        },
+        "deaths": {
+            "total": 900,
+            "new": 130
+        },
+        "recovered": {
+            "total": 13350,
+            "new": 850
+        }
+    }
+]

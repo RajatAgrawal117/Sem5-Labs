@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Europe",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 9500,
+            "new": 600
+        },
+        "deaths": {
+            "total": 210,
+            "new": 60
+        },
+        "recovered": {
+            "total": 7500,
+            "new": 500
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 10200,
+            "new": 700
+        },
+        "deaths": {
+            "total": 230,
+            "new": 70
+        },
+        "recovered": {
+            "total": 8100,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 10900,
+            "new": 700
+        },
+        "deaths": {
+            "total": 250,
+            "new": 70
+        },
+        "recovered": {
+            "total": 8700,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 11600,
+            "new": 700
+        },
+        "deaths": {
+            "total": 270,
+            "new": 70
+        },
+        "recovered": {
+            "total": 9300,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 12300,
+            "new": 700
+        },
+        "deaths": {
+            "total": 290,
+            "new": 70
+        },
+        "recovered": {
+            "total": 9900,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 13000,
+            "new": 700
+        },
+        "deaths": {
+            "total": 310,
+            "new": 70
+        },
+        "recovered": {
+            "total": 10500,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 13700,
+            "new": 700
+        },
+        "deaths": {
+            "total": 330,
+            "new": 70
+        },
+        "recovered": {
+            "total": 11100,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 14400,
+            "new": 700
+        },
+        "deaths": {
+            "total": 350,
+            "new": 70
+        },
+        "recovered": {
+            "total": 11700,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 15100,
+            "new": 700
+        },
+        "deaths": {
+            "total": 370,
+            "new": 70
+        },
+        "recovered": {
+            "total": 12300,
+            "new": 600
+        }
+    },
+    {
+        "country": "Europe",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 15800,
+            "new": 700
+        },
+        "deaths": {
+            "total": 390,
+            "new": 70
+        },
+        "recovered": {
+            "total": 12900,
+            "new": 600
+        }
+    }
+]

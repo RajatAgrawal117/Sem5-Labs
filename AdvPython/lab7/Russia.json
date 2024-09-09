@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Russia",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 14000,
+            "new": 700
+        },
+        "deaths": {
+            "total": 350,
+            "new": 40
+        },
+        "recovered": {
+            "total": 11500,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 13300,
+            "new": 700
+        },
+        "deaths": {
+            "total": 310,
+            "new": 40
+        },
+        "recovered": {
+            "total": 10900,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 12600,
+            "new": 700
+        },
+        "deaths": {
+            "total": 270,
+            "new": 40
+        },
+        "recovered": {
+            "total": 10300,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 11900,
+            "new": 700
+        },
+        "deaths": {
+            "total": 230,
+            "new": 40
+        },
+        "recovered": {
+            "total": 9700,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 11200,
+            "new": 700
+        },
+        "deaths": {
+            "total": 190,
+            "new": 40
+        },
+        "recovered": {
+            "total": 9100,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 10500,
+            "new": 700
+        },
+        "deaths": {
+            "total": 150,
+            "new": 40
+        },
+        "recovered": {
+            "total": 8500,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 9800,
+            "new": 700
+        },
+        "deaths": {
+            "total": 110,
+            "new": 40
+        },
+        "recovered": {
+            "total": 7900,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 9100,
+            "new": 700
+        },
+        "deaths": {
+            "total": 70,
+            "new": 40
+        },
+        "recovered": {
+            "total": 7300,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 8400,
+            "new": 700
+        },
+        "deaths": {
+            "total": 30,
+            "new": 40
+        },
+        "recovered": {
+            "total": 6700,
+            "new": 600
+        }
+    },
+    {
+        "country": "Russia",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 7700,
+            "new": 700
+        },
+        "deaths": {
+            "total": 10,
+            "new": 30
+        },
+        "recovered": {
+            "total": 6100,
+            "new": 600
+        }
+    }
+]

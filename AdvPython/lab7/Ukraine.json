@@ -1,0 +1,162 @@
+[
+    {
+        "country": "Ukraine",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 15000,
+            "new": 800
+        },
+        "deaths": {
+            "total": 500,
+            "new": 60
+        },
+        "recovered": {
+            "total": 13000,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 14200,
+            "new": 800
+        },
+        "deaths": {
+            "total": 440,
+            "new": 60
+        },
+        "recovered": {
+            "total": 12300,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 13400,
+            "new": 800
+        },
+        "deaths": {
+            "total": 380,
+            "new": 60
+        },
+        "recovered": {
+            "total": 11600,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 12600,
+            "new": 800
+        },
+        "deaths": {
+            "total": 320,
+            "new": 60
+        },
+        "recovered": {
+            "total": 10900,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 11800,
+            "new": 800
+        },
+        "deaths": {
+            "total": 260,
+            "new": 60
+        },
+        "recovered": {
+            "total": 10200,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 11000,
+            "new": 800
+        },
+        "deaths": {
+            "total": 200,
+            "new": 60
+        },
+        "recovered": {
+            "total": 9500,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 10200,
+            "new": 800
+        },
+        "deaths": {
+            "total": 140,
+            "new": 60
+        },
+        "recovered": {
+            "total": 8800,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 9400,
+            "new": 800
+        },
+        "deaths": {
+            "total": 80,
+            "new": 60
+        },
+        "recovered": {
+            "total": 8100,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 8600,
+            "new": 800
+        },
+        "deaths": {
+            "total": 20,
+            "new": 60
+        },
+        "recovered": {
+            "total": 7400,
+            "new": 700
+        }
+    },
+    {
+        "country": "Ukraine",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 7800,
+            "new": 800
+        },
+        "deaths": {
+            "total": 10,
+            "new": 10
+        },
+        "recovered": {
+            "total": 6700,
+            "new": 700
+        }
+    }
+]

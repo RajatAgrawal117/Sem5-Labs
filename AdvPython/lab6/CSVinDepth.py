@@ -1,27 +1,38 @@
 import pandas as pd
 import os
-# Define the directories
-directories = ['April', 'July', 'June']
-# initialize an empty list to store all the dataframes
+
+directories = ['AdvPython/lab6/April', 'AdvPython/lab6/July', 'AdvPython/lab6/June','AdvPython/lab6/March']
 all_dataframes = []
 
-# loop through each directory
 for directory in directories:
-    # loop through each CSV file in the directory
     for filename in os.listdir(directory):
         if filename.endswith(".csv"):
-            # read the CSV file into a pandas dataframe
             df = pd.read_csv(os.path.join(directory, filename))
-            # append the dataframe to the list
             all_dataframes.append(df)
 
-# concatenate all the dataframes into a single dataframe
 single_dataframe = pd.concat(all_dataframes)
-single_dataframe = single_dataframe.dropna() #skip null values of productID adn StoreID
+single_dataframe = single_dataframe.dropna()
 
 print(single_dataframe)
 
-# Calculate total sales for each Product_ID
 total_sales_by_product = single_dataframe.groupby('ProductID')['Quantity'].sum().reset_index()
 
 print(total_sales_by_product)
+
+product_names = pd.read_csv('AdvPython/lab6/product_names.csv')
+
+total_sales_by_product = pd.merge(total_sales_by_product, product_names, on='ProductID')
+
+single_dataframe['MonthYear'] = pd.to_datetime(single_dataframe['Date']).dt.to_period('M')
+unique_months = single_dataframe['MonthYear'].nunique()
+
+total_sales_by_product['AverageQuantityPerMonth'] = total_sales_by_product['Quantity'] / unique_months
+
+top_5_products = total_sales_by_product.sort_values(by='Quantity', ascending=False).head(5)
+
+print("Top 5 Best-Selling Products:")
+print(top_5_products[['ProductID', 'ProductName', 'Quantity', 'AverageQuantityPerMonth']])
+
+total_sales_by_product[['ProductID', 'ProductName', 'Quantity', 'AverageQuantityPerMonth']].to_csv('sales_summary.csv', index=False)
+
+print("Sales summary has been saved to 'sales_summary.csv'")

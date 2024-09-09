@@ -1,0 +1,162 @@
+[
+    {
+        "country": "England",
+        "date": "2023-11-01",
+        "confirmed_cases": {
+            "total": 9600,
+            "new": 800
+        },
+        "deaths": {
+            "total": 180,
+            "new": 70
+        },
+        "recovered": {
+            "total": 7600,
+            "new": 550
+        }
+    },
+    {
+        "country": "England",
+        "date": "2023-12-01",
+        "confirmed_cases": {
+            "total": 10600,
+            "new": 1000
+        },
+        "deaths": {
+            "total": 250,
+            "new": 90
+        },
+        "recovered": {
+            "total": 8350,
+            "new": 600
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-01-01",
+        "confirmed_cases": {
+            "total": 11900,
+            "new": 1300
+        },
+        "deaths": {
+            "total": 340,
+            "new": 100
+        },
+        "recovered": {
+            "total": 9200,
+            "new": 650
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-02-01",
+        "confirmed_cases": {
+            "total": 13300,
+            "new": 1400
+        },
+        "deaths": {
+            "total": 440,
+            "new": 110
+        },
+        "recovered": {
+            "total": 10100,
+            "new": 700
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-03-01",
+        "confirmed_cases": {
+            "total": 14800,
+            "new": 1500
+        },
+        "deaths": {
+            "total": 550,
+            "new": 120
+        },
+        "recovered": {
+            "total": 11100,
+            "new": 750
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-04-01",
+        "confirmed_cases": {
+            "total": 16400,
+            "new": 1600
+        },
+        "deaths": {
+            "total": 670,
+            "new": 130
+        },
+        "recovered": {
+            "total": 12150,
+            "new": 800
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-05-01",
+        "confirmed_cases": {
+            "total": 18100,
+            "new": 1700
+        },
+        "deaths": {
+            "total": 800,
+            "new": 140
+        },
+        "recovered": {
+            "total": 13250,
+            "new": 850
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-06-01",
+        "confirmed_cases": {
+            "total": 19900,
+            "new": 1800
+        },
+        "deaths": {
+            "total": 940,
+            "new": 150
+        },
+        "recovered": {
+            "total": 14400,
+            "new": 900
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-07-01",
+        "confirmed_cases": {
+            "total": 21800,
+            "new": 1900
+        },
+        "deaths": {
+            "total": 1090,
+            "new": 160
+        },
+        "recovered": {
+            "total": 15600,
+            "new": 950
+        }
+    },
+    {
+        "country": "England",
+        "date": "2024-08-01",
+        "confirmed_cases": {
+            "total": 23800,
+            "new": 2000
+        },
+        "deaths": {
+            "total": 1250,
+            "new": 170
+        },
+        "recovered": {
+            "total": 16950,
+            "new": 1000
+        }
+    }
+]
