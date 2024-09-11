@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Operations</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .input-group {
+        margin-bottom: 15px;
+      }
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .input-group input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .button-group {
+        text-align: center;
+      }
+      .button-group button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .button-group button:hover {
+        background-color: #45a049;
+      }
+      #output {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Interactive Operations</h1>
+    <div class="container">
+      <div class="input-group">
+        <label for="input1">Enter Number 1:</label>
+        <input type="number" id="input1" />
+      </div>
+      <div class="input-group">
+        <label for="input2">Enter Number 2:</label>
+        <input type="number" id="input2" />
+      </div>
+      <div class="button-group">
+        <button onclick="performArithmetic()">Arithmetic Operations</button>
+        <button onclick="performLogical()">Logical Operations</button>
+        <button onclick="performBitwise()">Bitwise Operations</button>
+      </div>
+      <div id="output"></div>
+    </div>
+    <script>
+      function getInputValues() {
+        const num1 = parseFloat(document.getElementById("input1").value);
+        const num2 = parseFloat(document.getElementById("input2").value);
+        return { num1, num2 };
+      }
+
+      function displayOutput(message) {
+        document.getElementById("output").textContent = message;
+      }
+
+      function performArithmetic() {
+        const { num1, num2 } = getInputValues();
+        if (isNaN(num1) || isNaN(num2)) {
+          displayOutput("Please enter valid numbers.");
+          return;
+        }
+        const add = num1 + num2;
+        const sub = num1 - num2;
+        const mul = num1 * num2;
+        const div = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+        displayOutput(
+          `Addition: ${add}, Subtraction: ${sub}, Multiplication: ${mul}, Division: ${div}`
+        );
+      }
+
+      function performLogical() {
+        const { num1, num2 } = getInputValues();
+        if (isNaN(num1) || isNaN(num2)) {
+          displayOutput("Please enter valid numbers.");
+          return;
+        }
+        const andResult = num1 && num2;
+        const orResult = num1 || num2;
+        displayOutput(`Logical AND: ${andResult}, Logical OR: ${orResult}`);
+      }
+
+      function performBitwise() {
+        const { num1, num2 } = getInputValues();
+        if (isNaN(num1) || isNaN(num2)) {
+          displayOutput("Please enter valid numbers.");
+          return;
+        }
+        const bitwiseAnd = num1 & num2;
+        const bitwiseOr = num1 | num2;
+        const bitwiseXor = num1 ^ num2;
+        const bitwiseNot1 = ~num1;
+        const bitwiseNot2 = ~num2;
+
+        displayOutput(
+          `Bitwise AND: ${bitwiseAnd}, Bitwise OR: ${bitwiseOr}, Bitwise XOR: ${bitwiseXor}, 
+          Bitwise NOT (Number 1): ${bitwiseNot1}, Bitwise NOT (Number 2): ${bitwiseNot2}`
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Form with Validation</title>
+  </head>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      background-image: url(./pexels-pixabay-531880.jpg);
+    }
+    h1 {
+      text-align: center;
+      text-shadow: 2px 2px pi;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .Container {
+      width: 40%;
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form {
+      margin: 50px auto;
+      width: 500px;
+      padding: 20px;
+      border-radius: 10px;
+      border-color: #ced9cf;
+      box-shadow: 0px 0px 10px rgb(26, 194, 59);
+      font-weight: bold;
+      background-color: #ffffff;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+      display: block;
+      width: 98%;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #1c4eb9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #25ad2e;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div class="Container">
+      <h1>Registeration Form</h1>
+      <form id="enhancedForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span id="emailError" class="error"></span>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required />
+        <span id="contactError" class="error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <span id="passwordError" class="error"></span>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <span id="dobError" class="error"></span>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <span id="genderError" class="error"></span>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <span id="addressError" class="error"></span>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script>
+      function validateForm() {
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("contactError").innerText = "";
+        document.getElementById("passwordError").innerText = "";
+        document.getElementById("dobError").innerText = "";
+        document.getElementById("genderError").innerText = "";
+        document.getElementById("addressError").innerText = "";
+        var isValid = true;
+        var name = document.getElementById("name").value;
+        var namePattern = /^[A-Za-z\s]+$/;
+        if (!namePattern.test(name)) {
+          document.getElementById("nameError").innerText =
+            "Please enter a valid name (letters and spaces only).";
+          isValid = false;
+        }
+        var email = document.getElementById("email").value;
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+          document.getElementById("emailError").innerText =
+            "Please enter a valid email.";
+          isValid = false;
+        }
+        var contact = document.getElementById("contact").value;
+        var contactPattern = /^\d{10}$/;
+        if (!contactPattern.test(contact)) {
+          document.getElementById("contactError").innerText =
+            "Please enter a valid 10-digit contact number.";
+          isValid = false;
+
+
+
+          
+        }
+        var password = document.getElementById("password").value;
+        if (password.length < 6) {
+          document.getElementById("passwordError").innerText =
+            "Password must be at least 6 characters long.";
+          isValid = false;
+        }
+        var dob = document.getElementById("dob").value;
+        var today = new Date().toISOString().split("T")[0];
+        if (dob >= today) {
+          document.getElementById("dobError").innerText =
+            "Please enter a valid date of birth (in the past).";
+          isValid = false;
+        }
+        var gender = document.getElementById("gender").value;
+        if (gender === "") {
+          document.getElementById("genderError").innerText =
+            "Please select your gender.";
+          isValid = false;
+        }
+        // Address validation: non-empty check
+        var address = document.getElementById("address").value;
+        if (address.trim() === "") {
+          document.getElementById("addressError").innerText =
+            "Please enter your address.";
+          isValid = false;
+        }
+        return isValid; // Return false if any validation fails
+      }
+    </script>
+  </body>
+</html>
