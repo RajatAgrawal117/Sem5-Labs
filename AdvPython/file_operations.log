@@ -1,0 +1,2 @@
+INFO:root:Wrote to sample.txt: Hello World!
+INFO:root:Read from sample.txt: Hello World!
