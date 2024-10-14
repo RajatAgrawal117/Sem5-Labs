@@ -1,0 +1,14 @@
+2024-10-07 14:59:01,888 - INFO - Banking system started
+2024-10-07 14:59:01,888 - INFO - Attempting to create a new account: Alice
+2024-10-07 14:59:01,888 - DEBUG - Account Alice created successfully with balance 100.
+2024-10-07 14:59:01,888 - INFO - Attempting to create a new account: Bob
+2024-10-07 14:59:01,888 - WARNING - Cannot create account Bob with a negative balance.
+2024-10-07 14:59:01,888 - INFO - Attempting to create a new account: Alice
+2024-10-07 14:59:01,888 - WARNING - Account Alice already exists.
+2024-10-07 14:59:01,888 - INFO - Attempting to withdraw 30 from account: Alice
+2024-10-07 14:59:01,901 - DEBUG - Withdrawal of 30 from account Alice successful. Remaining balance: 70.
+2024-10-07 14:59:01,902 - INFO - Attempting to withdraw 50 from account: Bob
+2024-10-07 14:59:01,902 - WARNING - Account Bob does not exist.
+2024-10-07 14:59:01,902 - INFO - Attempting to withdraw 150 from account: Alice
+2024-10-07 14:59:01,902 - WARNING - Insufficient funds in account Alice. Available balance: 70.
+2024-10-07 14:59:01,902 - INFO - Banking system finished

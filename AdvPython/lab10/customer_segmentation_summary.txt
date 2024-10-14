@@ -1,0 +1,17 @@
+Mean Total Amount Spent: 1898.4597012808783
+Median Total Amount Spent: 648.075
+Standard Deviation of Total Amount Spent: 8219.345141066584
+
+Mean Total Items Purchased: 1122.3440073193046
+Median Total Items Purchased: 365.0
+Standard Deviation of Total Items Purchased: 4672.790720294934
+
+Segment Insights:
+        TotalAmountSpent                    Quantity           DaysSinceLastPurchase         AveragePurchaseValue          
+                    mean      median           mean    median                  mean  median                 mean    median
+Segment                                                                                                                   
+0             941.453482     592.880     563.464646     326.0           4789.846514  4747.0             2.740508  1.790000
+1          129057.952000  123725.450   68697.600000   69029.0           4701.600000  4701.0             1.884472  1.717707
+2           40725.982963   33805.690   26378.629630   24210.0           4699.407407  4696.0             1.845638  1.586183
+3            7877.732330    6654.260    4671.086022    3973.0           4715.218638  4702.0             1.870038  1.782333
+4          267963.755000  267963.755  130420.500000  130420.5           4693.500000  4693.5             2.709990  2.709990

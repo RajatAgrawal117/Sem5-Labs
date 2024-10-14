@@ -1,0 +1,14 @@
+Scenario: Banking System
+Key Components & Functions for Logging:
+
+Account Creation - Log when a new account is created.
+Deposit - Log deposits, including when deposits fail.
+Withdrawal - Log withdrawals, including failure conditions such as insufficient balance.
+Balance Inquiry - Log balance checks.
+Exception Handling - Log exceptions in case of errors during transactions or system issues.
+
+Logging Levels:
+DEBUG: Log detailed information during normal operation, like variable states or detailed flow information.
+INFO: Log key actions like successful account creation, deposit, or withdrawal.
+WARNING: Log potential issues like trying to withdraw more money than the available balance.
+ERROR: Log any errors, such as invalid input or transaction failures.
