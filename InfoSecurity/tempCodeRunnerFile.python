@@ -1,0 +1,60 @@
+# Function to perform XOR and shifting encryption
+def xor_shift_encrypt(message, private_key):
+    encrypted = []
+    for char in message:
+        # XOR the character with the private key and left shift by 2
+        encrypted_char = (ord(char) ^ private_key) << 2
+        encrypted.append(encrypted_char)
+    return encrypted
+
+# Function to perform XOR and shifting decryption
+def xor_shift_decrypt(encrypted_message, public_key):
+    decrypted = []
+    for enc_char in encrypted_message:
+        # Right shift by 2 and then XOR with the public key
+        decrypted_char = (enc_char >> 2) ^ public_key
+        decrypted.append(chr(decrypted_char))
+    return ''.join(decrypted)
+
+# Simple hash function for message digest
+def simple_hash(message):
+    hash_value = 0
+    for char in message:
+        hash_value = (hash_value * 31 + ord(char)) % 1000  # A small hash for demo purposes
+    return hash_value
+
+# Main program
+def main():
+    # User input for the message
+    message = input("Enter a message to be signed: ")
+
+    # Key values (these could be more complex and generated securely)
+    private_key = int(input("Enter a private key (numeric): "))
+    public_key = private_key  # For simplicity, using the same value in this demo
+
+    # Step 1: Create a hash of the message (MD1)
+    message_digest = simple_hash(message)
+    print(f"Message Digest (MD1): {message_digest}")
+
+    # Step 2: Encrypt the message digest using XOR and shifting (Digital Signature)
+    digital_signature = xor_shift_encrypt(str(message_digest), private_key)
+    print(f"Digital Signature: {digital_signature}")
+
+    # Simulate sending the message and signature to the receiver
+
+    # Step 3: Receiver hashes the message (MD2)
+    received_message_digest = simple_hash(message)
+    print(f"Received Message Digest (MD2): {received_message_digest}")
+
+    # Step 4: Receiver decrypts the digital signature using XOR and shifting
+    decrypted_digest = xor_shift_decrypt(digital_signature, public_key)
+    print(f"Decrypted Digest (MD1 from signature): {decrypted_digest}")
+
+    # Step 5: Verify if the original message digest (MD1) matches the decrypted one (MD2)
+    if int(decrypted_digest) == received_message_digest:
+        print("Signature verified successfully. The message is authentic and unaltered.")
+    else:
+        print("Signature verification failed. The message may have been altered.")
+
+if __name__ == "__main__":
+    main()

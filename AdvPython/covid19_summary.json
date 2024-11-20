@@ -1,0 +1,68 @@
+{
+    "brazil": {
+        "total_confirmed": 11125,
+        "total_deaths": 245,
+        "total_recovered": 9990,
+        "total_active": 890
+    },
+    "france": {
+        "total_confirmed": 14145,
+        "total_deaths": 260,
+        "total_recovered": 6930,
+        "total_active": 6955
+    },
+    "germany": {
+        "total_confirmed": 12625,
+        "total_deaths": 245,
+        "total_recovered": 9990,
+        "total_active": 2390
+    },
+    "iceland": {
+        "total_confirmed": 12625,
+        "total_deaths": 245,
+        "total_recovered": 9990,
+        "total_active": 2390
+    },
+    "india": {
+        "total_confirmed": 22250,
+        "total_deaths": 445,
+        "total_recovered": 19800,
+        "total_active": 2005
+    },
+    "japan": {
+        "total_confirmed": 8900,
+        "total_deaths": 205,
+        "total_recovered": 8010,
+        "total_active": 685
+    },
+    "mauritius": {
+        "total_confirmed": 5540,
+        "total_deaths": 120,
+        "total_recovered": 4995,
+        "total_active": 425
+    },
+    "russia": {
+        "total_confirmed": 12625,
+        "total_deaths": 245,
+        "total_recovered": 9990,
+        "total_active": 2390
+    },
+    "southkorea": {
+        "total_confirmed": 12625,
+        "total_deaths": 245,
+        "total_recovered": 9990,
+        "total_active": 2390
+    },
+    "uk": {
+        "total_confirmed": 16800,
+        "total_deaths": 345,
+        "total_recovered": 15075,
+        "total_active": 1380
+    },
+    "usa": {
+        "total_confirmed": 33375,
+        "total_deaths": 690,
+        "total_recovered": 29925,
+        "total_active": 2760
+    }
+}

@@ -1,23 +1,27 @@
 %{
-#include<stdio.h>
-int lines=0, words=0, characters=0;
+#include <stdio.h>
+
+int char_count = 0;
+int word_count = 0;
+int line_count = 0;
 %}
+
 %%
-\n { words++; lines++; }
-[^ \t ' '] { characters++; words++ }
-. { characters++; }
+\n              { line_count++; char_count++;}
+[ \t]+          { char_count += yyleng;}
+[^ \t\n]+       { char_count += yyleng; word_count++;}
+.               { char_count++;}
 %%
 
-main(void)
-{
-    yylex();
-    printf("This file contains ...");
-    printf("\n\t%d lines", lines);
-    printf("\n\t%d words", words);
-    printf("\n\t%d characters\n", characters);
+int yywrap() {
+    return 1;
 }
 
-int yywrap()
-{
-    return 1;
+int main() {
+    yylex();
+FILE *file = fopen("output.txt","w");
+    fprintf(file, "Number of characters: %d\n", char_count);
+    fprintf(file, "Number of words: %d\n", word_count);
+    fprintf(file, "Number of lines: %d\n", line_count);
+    return 0;
 }

@@ -1,0 +1,16 @@
+2024-10-29 20:59:08,499 - INFO - Hospital management application started
+2024-10-29 20:59:08,499 - INFO - Attempting to add patient: P001 - Jinay
+2024-10-29 20:59:08,499 - DEBUG - Patient Jinay added successfully.
+2024-10-29 20:59:08,499 - INFO - Attempting to add patient: P002 - Ansh
+2024-10-29 20:59:08,499 - DEBUG - Patient Ansh added successfully.
+2024-10-29 20:59:08,499 - INFO - Attempting to add staff member: D001 - Rajat
+2024-10-29 20:59:08,499 - DEBUG - Staff member Rajat added successfully.
+2024-10-29 20:59:08,499 - INFO - Attempting to add staff member: N001 - Aditya
+2024-10-29 20:59:08,499 - DEBUG - Staff member Aditya added successfully.
+2024-10-29 20:59:08,499 - INFO - Scheduling appointment for patient P001 with doctor D001
+2024-10-29 20:59:08,499 - DEBUG - Appointment scheduled: {'patient': {'name': 'Jinay', 'age': 45, 'ailment': 'Flu'}, 'doctor': {'name': 'Rajat', 'position': 'Physician', 'department': 'General'}, 'appointment_time': '10:00 AM'}
+2024-10-29 20:59:08,499 - INFO - Scheduling appointment for patient P003 with doctor D001
+2024-10-29 20:59:08,499 - WARNING - Patient P003 does not exist.
+2024-10-29 20:59:08,499 - INFO - Scheduling appointment for patient P001 with doctor D002
+2024-10-29 20:59:08,499 - WARNING - Doctor D002 does not exist.
+2024-10-29 20:59:08,499 - INFO - Hospital management application finished

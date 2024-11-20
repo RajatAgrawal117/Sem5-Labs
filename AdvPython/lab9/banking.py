@@ -1,6 +1,5 @@
 import logging
 
-# Set up logging configuration
 logging.basicConfig(
     filename="banking_system.log",
     filemode="w",
@@ -10,6 +9,7 @@ logging.basicConfig(
 
 
 accounts = {}
+
 
 def create_account(account_name, initial_balance):
     logging.info(f"Attempting to create a new account: {account_name}")
@@ -32,8 +32,6 @@ def create_account(account_name, initial_balance):
     except Exception as e:
         logging.error(f"Error creating account {account_name}: {str(e)}")
         raise
-
-
 
 
 def withdraw_money(account_name, amount):
@@ -70,15 +68,15 @@ def main():
     try:
         # Create accounts
         print(create_account("Alice", 100))
-        print(create_account("Bob", -50))  # This should trigger a warning
-        print(create_account("Alice", 200))  # This should trigger a warning
+        print(create_account("Bob", -50))  # This will trigger a warning
+        print(create_account("Alice", 200))  # This will trigger a warning
 
         # Withdraw money
         print(withdraw_money("Alice", 30))
         print(withdraw_money("Bob", 50))  # This should trigger a warning
         # This should trigger a warning for insufficient funds
         print(withdraw_money("Alice", 150))
-
+        print(create_account("rajat",-100))
     except Exception as e:
         logging.error(f"Application encountered an error: {str(e)}")
 

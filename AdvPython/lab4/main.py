@@ -4,7 +4,11 @@ def calculate_average_marks(input_file, output_file):
     with open(input_file, mode='r') as infile:
         reader = csv.DictReader(infile)
         student_averages = []
-
+        print(reader.fieldnames)
+        print(reader.line_num)  
+        print(reader.dialect)
+        print(reader.reader)
+        print(reader.restkey)
         for row in reader:
             student_name = row['student_name']
             total_marks = 0
